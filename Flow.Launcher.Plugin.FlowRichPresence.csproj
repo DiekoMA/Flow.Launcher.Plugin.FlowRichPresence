@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <AssemblyName>Flow.Launcher.Plugin.FlowRichPresence</AssemblyName>
+        <PackageId>Flow.Launcher.Plugin.FlowRichPresence</PackageId>
+        <Authors>DiekoMA</Authors>
+        <UseWpf>true</UseWpf>
+        <PackageProjectUrl>https://github.com/DiekoMA/Flow.Launcher.Plugin.FlowRichPresence</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/DiekoMA/Flow.Launcher.Plugin.FlowRichPresence</RepositoryUrl>
+        <PackageTags>flow-launcher flow-plugin</PackageTags>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>None</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include=".github\workflows\main.yml" />
+        <Content Include="plugin.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Flow.Launcher.Plugin" Version="4.4.0"/>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0-preview3" />
+        <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Assets\PauseIcon.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\PlayIcon.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\PluginIcon.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\StopIcon.png">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

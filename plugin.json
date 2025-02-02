@@ -1,0 +1,12 @@
+{
+    "ID": "6CD987FE4D5E43438EE51C43D0961F89",
+    "ActionKeyword": "frp",
+    "Name": "FlowRichPresence",
+    "Description": "A plugin for creating and running custom discord rich presences from flow launcher",
+    "Author": "DiekoMA",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/DiekoMA/Flow.Launcher.Plugin.FlowRichPresence",
+    "IcoPath": "Assets/PluginIcon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.FlowRichPresence.dll"
+}
